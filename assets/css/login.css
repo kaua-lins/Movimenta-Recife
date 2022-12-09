@@ -15,9 +15,8 @@ html {
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
     font-family: 'Roboto';
     color: white;
     min-height: 100vh;
@@ -37,8 +36,8 @@ h1 {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 500px;
-    max-height: 700px;
+    min-width: 500px;
+    min-height: 700px;
     background-color: #182848;
     border-radius: 10px;
 }
@@ -128,44 +127,31 @@ h1 {
 }
 
 /* Responsividade */
-@media (max-width: 1440px) {
-    .login-box {
-        height: 630px;
-    }
 
-    .login-header {
-        height: 300px;
+@media (max-width: 768px) {
+    .login-box {
+        min-width: 100%;
+        min-height: 100%;
     }
 }
 
-/* @media (max-width: 768px) {   
+@media (min-width: 320px) and (max-width: 500px) {
     .login-box {
-        height: 600px;
+        border-radius: 0;
+        min-width: 100%;
+        min-height: 100%;
     }
-
-    .login-header {
-        height: 300px;
-    }
-} */
+}
 
 @media (max-width: 500px) {
-    body {
-        font-size: 1.5rem;
-    }
-    
     h1 {
-        font-size: 4rem;
-    }
-
-    .login-box {
-        min-height: 100vh;
-        border-radius: 0;
+        font-size: 4.5rem;
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
     h1 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     body {

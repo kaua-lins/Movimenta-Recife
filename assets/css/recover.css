@@ -1,0 +1,76 @@
+/* Fonte utilizada */
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    background-color: #182848;
+}
+
+.recover-box {
+    width: 400px;
+    height: 250px;
+    background-color: #182848;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.recover-tittle {
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+
+.recover-input input {
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    color: #182848;
+}
+
+.recover-input input:hover {
+    background-color: lightgray;
+}
+
+.recover-button button {
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    color: #182848;
+}
+
+.recover-button button:hover {
+    background-color: lightgray;
+}
+
+.recover-login a {
+    text-decoration: none;
+    color: #2a4c8f;
+}
+
+.recover-login a:hover {
+    text-decoration: underline;
+    color: #5889eb;
+}

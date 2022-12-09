@@ -1,0 +1,174 @@
+/* Fontes utilizadas no site */
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@400;700&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+    color: white;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #0b1222;
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-family: 'Montserrat';
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    max-height: 700px;
+    background-color: #182848;
+    border-radius: 10px;
+}
+
+.login-header {
+    width: 250px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+}
+
+.login-form input {
+    width: 250px;
+    height: 45px;
+    padding: 5px;
+    margin-top: 7px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: #182848;
+    color: white;
+}
+
+.login-form input:hover {
+    background-color: #29406e;
+}
+
+.login-form input::placeholder {
+    color: white;
+}
+
+.button-login button {
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 1px solid #182848;
+}
+
+.button-login button:hover {
+    background-color: rgb(185, 184, 184);
+}
+
+.login-others {
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 100px;
+}
+
+.login-checkbox span {
+    margin-right: 8px;
+}
+
+.login-forgot a {
+    text-decoration: none;
+    color: #3f74df;
+}
+
+.login-forgot a:hover {
+    text-decoration: underline;
+    color: #5889eb;
+}
+
+.login-register a {
+    text-decoration: none;
+    color: #3f74df;
+}
+
+.login-register a:hover {
+    text-decoration: underline;
+    color: #5889eb;
+}
+
+/* Responsividade */
+@media (max-width: 1440px) {
+    .login-box {
+        height: 630px;
+    }
+
+    .login-header {
+        height: 300px;
+    }
+}
+
+/* @media (max-width: 768px) {   
+    .login-box {
+        height: 600px;
+    }
+
+    .login-header {
+        height: 300px;
+    }
+} */
+
+@media (max-width: 500px) {
+    body {
+        font-size: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 4rem;
+    }
+
+    .login-box {
+        min-height: 100vh;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    body {
+        font-size: 1.4rem;
+    }
+}

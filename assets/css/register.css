@@ -1,0 +1,278 @@
+/* Fontes utilizadas no site */
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@400;700&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    color: white;
+    max-height: 100vh;
+    max-width: 100vw;
+    background-color: #0b1222;
+}
+
+h1 {
+    font-family: 'Montserrat';
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Montserrat';
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+/* Separação das caixas*/
+
+.register-boxes {
+    display: flex;
+}
+
+/* Caixa de bem-vindo */
+
+.welcome-box {
+    width: 650px;
+    min-height: 100vh;
+    background-color: white;
+    color: #182848;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.welcome-tittle {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.welcome-text {
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: rgb(199, 199, 199);
+}
+
+.welcome-text:hover {
+    cursor: default;
+    color: #182848;
+}
+
+.welcome-login {
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.welcome-login button {
+    width: 300px;
+    height: 60px;
+    padding: 10px;
+    border: none;
+    background-color: #182848;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.welcome-login button:hover {
+    background-color: #fff;
+    color: #182848;
+    border: 1px solid #182848;
+}
+
+/* Caixa de registro */
+
+.register-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 650px;
+    min-height: 100vh;
+    background-color: #182848;
+}
+
+.register-tittle {
+    margin-top: 50px;
+}
+
+
+.register-main {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-around;
+    height: 350px;
+    padding: 5px;
+}
+
+.input-password {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-main input {
+    width: 250px;
+    height: 40px;
+    padding: 5px;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: #182848;
+    color: white;
+}
+
+.register-main input:hover {
+    background-color: #29406e;
+}
+
+.register-main input::placeholder {
+    color: white;
+}
+
+.register-button button{
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    color: #182848;
+}
+
+.register-button button:hover {
+    background-color: #182848;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.register-login {
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    display: none;
+}
+
+.register-login a {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #182848;
+    text-decoration: none;
+    display: block;
+    border: 1px solid #182848;
+}
+
+.register-login a:hover {
+    background-color: #182848;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.register-checkbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
+.register-checkbox span {
+    margin-right: 5px;
+}
+
+/* Responsividade */
+
+@media (max-width: 1024px) {
+    .welcome-box,
+    .register-box {
+        width: 512px;
+        height: 100vh;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    body {
+        font-size: 1.3rem;
+    }
+
+    .welcome-box,
+    .register-box {
+        width: 384px;
+        height: 100vh;
+    }
+}
+
+@media (max-width: 425px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    body {
+        font-size: 1.2rem;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .register-box {
+        height: 100vh;
+        width: 423px;
+    }
+
+    .register-login {
+        display: flex;
+    }
+}
+
+@media (max-width: 375px) {
+    .register-box {
+        width: 375px;
+        height: 100vh;
+    }
+}
+
+@media (max-width: 320px) {
+    .register-box {
+        width: 320px;
+        height: 100vh;
+    }
+}

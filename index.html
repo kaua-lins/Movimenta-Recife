@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
-    <title>Esportes Recife</title>
+    <title>Movimenta Recife</title>
 </head>
 <body>
     <header>
-        <nav id="nav" class="navegation-bar">
+        <nav id="nav" class="navegation-bar on">
             <div class="nav-logo">
                 <figure>
                     <img src="https://cdn-icons-png.flaticon.com/128/5564/5564938.png" alt="">
@@ -66,25 +66,21 @@
             </div>
 
             <div class="nav-buttons">
-                <div class="nav-login">
-                    <form action="login.html">
-                        <button class="login-button" type="submit">
-                            <img src="https://img.icons8.com/ios/2x/enter-2.png"
-                            alt="">
-                            <a href="login.html" target="_blank">LOGIN</a>
-                        </button>
-                    </form>
-                </div>
-
                 <div class="nav-register">
                     <form action="register.html">
                         <button class="register-button" type="submit">
                             <img src="https://img.icons8.com/external-those-icons-lineal-those-icons/2x/external-User-interface-those-icons-lineal-those-icons-2.png" 
                             alt="">
-                            <a href="register.html" target="_blank">   CADASTRO</a>
+                            <a href="register.html" target="_blank">REGISTRO/LOGIN</a>
                         </button>
                     </form>
                 </div>
+            </div>
+
+            <div class="hamburguer">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
             </div>
         </nav>
     </header>
@@ -93,14 +89,14 @@
         <section id="main">
             <div class="main-box">
                 <div class="main-content">
-                    <h1>Esportes Recife</h1>
-                    <h3>Temos como objetivo</h3>
-                    <ul>
-                        <li>Informações de bem estar.</li>
-                        <li>Dicas de melhor qualidade de vida.</li>
-                        <li>Conteúdo sobre modalidades esportivas</li>
-                        <li>Cálculo IMC.</li>
-                        <li>Divulgação de pontos de doação.</li>
+                    <h1>Movimenta Recife</h1>
+                    <h2>Temos como objetivo</h2>
+                    <ul class="main-list">
+                        <li class="main-list-item">Informações de bem estar.</li>
+                        <li class="main-list-item">Dicas de melhor qualidade de vida.</li>
+                        <li class="main-list-item">Conteúdo sobre modalidades esportivas.</li>
+                        <li class="main-list-item">Cálculo IMC.</li>
+                        <li class="main-list-item">Divulgação de pontos de doação.</li>
                     </ul>
                 </div>
 
@@ -144,7 +140,7 @@
 
                 <div class="healthy-others">
                     <div class="healthy-more">
-                        <span>Gostou do conteúdo? <a href="#">Clique aqui</a> para ler mais.</span>
+                        <a href="#">LEIA MAIS</a>
                     </div>
 
                     <div class="to-main-screen">
@@ -164,46 +160,46 @@
         <section id="volleyball">
             <div class="volleyball-box">
                 <h1 class="volleyball-title">Vôlei</h1>
-                <h2 class="volleyball-subtitle">Os benefícios do vôlei a saúde</h2>
                 <div class="volleyball-content">
                     <div class="volleyball-card">
+                        <h2 class="volleyball-subtitle">Os benefícios do vôlei a saúde</h2>
                         <ul class="volleyball-list">
-                            <li>
+                            <li class="volleyball-list-item">
                                 Estimula a sinapse dos neurônios, pois precisa estudar a jogada, o adversário, o time.
                             </li>
 
-                            <li>
+                            <li class="volleyball-list-item">
                                 Melhora a cognição, porque necessita ter a percepção rápida da jogada.
                             </li>
 
-                            <li>
+                            <li class="volleyball-list-item">
                                 Fortalece o corpo, estimula os membros superiores e inferiores, aumentando a
                                 flexibilidade e a coordenação motora.
                             </li>
 
-                            <li>
+                            <li class="volleyball-list-item">
                                 Melhora as capacidades cardiorrespiratórias.
                             </li>
 
-                            <li>
+                            <li class="volleyball-list-item">
                                 Auxilia na perda de peso, como todas as atividades físicas.
                             </li>
 
-                            <li>
+                            <li class="volleyball-list-item">
                                 Alivia o estresse, pela adrenalina da competição.
                             </li>
                         </ul>
                     </div>
 
-                    <div class="volleyball-video">
+<!--                     <div class="volleyball-video">
                         <h2 class="volleyball-video-title">Regras básicas do vôlei</h2>
                         <iframe width="600" height="315" src="https://www.youtube.com/embed/qc1wkTMmXY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="volleyball-others">
                     <div class="volleyball-more">
-                        <span>Se interessou pelo vôlei? <a href="#">Clique aqui</a> para saber mais.</span>
+                        <a href="#">LEIA MAIS</a>
                     </div>
                     <div class="to-main-screen">
                         <div class="to-main-screen-button">
@@ -222,9 +218,9 @@
         <section id="gym">
             <h1 class="gym-title">Academia</h1>
             <div class="gym-box">
-                <div class="gym-content-one">
+                <div class="gym-content">
                     <div class="gym-card">
-                        <h3 class="gym-subtitle">Porque praticar?</h3>
+                        <h2 class="gym-subtitle">Porque praticar?</h2>
                         <p>Praticar atividades físicas é essencial não só para a estética, mas também é importante para a saúde. Incluir em sua rotina ir à academia, pelo três vezes na semana.</p>
                     </div>
 
@@ -232,9 +228,7 @@
                         <h3 class="gym-subtitle">O que melhorar?</h3>
                         <p>Praticar atividades físicas melhora o seu condicionamento, o seu humor, libera a tensão, fortalece o seu corpo e aumenta a produção de endorfina.</p>
                     </div>
-                </div>
 
-                <div class="gym-content-two">
                     <div class="gym-card">
                         <h3 class="gym-subtitle">Como começar?</h3>
                         <p>Procure aos poucos, movimentar-se mais, com atividades físicas indiretas para sair do sedentarismo. Vá a pé a lugares próximos, suba escadas sempre que tiver a oportunidade e tente não ficar sentado o dia todo.</p>
@@ -249,7 +243,7 @@
 
             <div class="gym-others">
                 <div class="gym-more">
-                    <span>Veja a localização das academias da cidade <a href="localization.html" target="_blank">Clique aqui</a></span>
+                    <a href="localization.html" target="_blank">LOCALIZAÇÕES</a>
                 </div>
                 <div class="to-main-screen">
                     <div class="to-main-screen-button">

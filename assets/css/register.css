@@ -12,17 +12,13 @@ font-family: 'Roboto', sans-serif; */
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: 'Roboto';
     font-size: 1.5rem;
     color: white;
-    max-height: 100vh;
-    max-width: 100vw;
     background-color: #0b1222;
 }
 
@@ -41,7 +37,9 @@ h2 {
 /* Separação das caixas*/
 
 .register-boxes {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
+    place-items: center;
 }
 
 /* Caixa de bem-vindo */
@@ -97,6 +95,29 @@ h2 {
 }
 
 .welcome-login button:hover {
+    background-color: #fff;
+    color: #182848;
+    border: 1px solid #182848;
+}
+
+.welcome-register {
+    text-align: center;
+    display: none;
+}
+
+.welcome-register button {
+    width: 300px;
+    height: 60px;
+    padding: 10px;
+    border: none;
+    background-color: #182848;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.welcome-register button:hover {
     background-color: #fff;
     color: #182848;
     border: 1px solid #182848;
@@ -212,67 +233,18 @@ h2 {
 
 /* Responsividade */
 
-@media (max-width: 1024px) {
-    .welcome-box,
-    .register-box {
-        width: 512px;
-        height: 100vh;
+@media (max-width: 1299px) {
+    .welcome-register {
+        display: block;
     }
 }
 
-@media (max-width: 768px) {
-    h1 {
-        font-size: 3rem;
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
-
-    body {
-        font-size: 1.3rem;
-    }
-
-    .welcome-box,
-    .register-box {
-        width: 384px;
-        height: 100vh;
-    }
-}
-
-@media (max-width: 425px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    body {
-        font-size: 1.2rem;
-    }
-
-    aside {
+@media (max-width: 650px) {
+    .welcome-box {
         display: none;
-    }
-
-    .register-box {
-        height: 100vh;
-        width: 423px;
     }
 
     .register-login {
         display: flex;
-    }
-}
-
-@media (max-width: 375px) {
-    .register-box {
-        width: 375px;
-        height: 100vh;
-    }
-}
-
-@media (max-width: 320px) {
-    .register-box {
-        width: 320px;
-        height: 100vh;
     }
 }

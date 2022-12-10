@@ -43,7 +43,7 @@ h3 {
 
 
 .title {
-    margin-top: 30px;
+    padding: 40px;
     font-size: 3.5rem;
     text-align: center;
 }
@@ -96,14 +96,22 @@ h3 {
 
 .time-card {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    padding: 50px;
     place-items: center;
     gap: 10px;
+    font-size: 1.3rem;
+}
+
+.time-card h3 {
+    font-size: 1.8rem;
+    padding: 10px;
 }
 
 .time-title {
     font-size: 1.8rem;
     text-align: center;
+    padding: 40px;
 }
 
 .time-week {
@@ -114,18 +122,7 @@ h3 {
     font-size: 20px;
     width: 320px;
     border-radius: 8px;
-    line-height: 30px;
-}
-
-.time-weekend {
-    text-align: center;
-    font-size: 20px;
-    background-color: var(--primary-color);
-    color: #ffff;
-    padding: 20px;
-    width: 320px;
-    border-radius: 8px;
-    line-height: 30px;
+    line-height: 3rem;
 }
 
 /* Cronograma de atividades do programa */
@@ -133,7 +130,7 @@ h3 {
 .activities-title {
     text-align: center;
     font-size: 1.8rem;
-    margin-top: 40px;
+    padding: 40px;
 }
 
 .activities-timeline {
@@ -201,6 +198,14 @@ h3 {
 }
 
 @media (max-width: 575px) {
+    body {
+        font-size: 1.3rem;
+    }
+
+    li {
+        font-size: 1.3rem;
+    }
+
     .title {
         font-size: 2.5rem;
     }
@@ -221,9 +226,89 @@ h3 {
     }
 }
 
+@media (max-width: 500px) {
+    .timeline-box-one,
+    .timeline-box-two {
+        height: 290px;
+    }
+
+    .time-week h3 {
+        font-size: 1.4rem;
+    }
+}
+
 @media (max-width: 460px) {
+    body {
+        font-size: 1.1rem;
+    }
+
+    li {
+        font-size: 1.1rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .time-title,
+    .activities-title {
+        font-size: 1.2rem;
+    }
+
+
+    .localization-description {
+        font-size: 1.1rem;
+    }
+
+    iframe {
+        width: 300px;
+        height: 200px;
+    }
+    
     .localization-box {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .localization-card {
+        padding: 10px;
+    }
+
+    .time-week h3 {
+        font-size: 1.4rem;
+    }
+
+    .time-week {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .time-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .time-card {
+       padding: 50px 0px;
+    }
+}
+
+@media (max-width: 400px) {
+    .activities-timeline {
+        width: 400px;
+    }
+
+    .time-card {
+        padding: 20px;
+    }
+
+    .timeline-box-one,
+    .timeline-box-two {
+        padding: 10px;
+        margin: 20px;
+    }
+
+    .footer-link {
+        width: 400px;
     }
 }

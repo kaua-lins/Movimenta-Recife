@@ -81,7 +81,7 @@ h3 {
 
 .navegation-bar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     background-color: var(--white-color);
     padding: 10px;
@@ -105,8 +105,8 @@ h3 {
 .nav-items ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
-    width: 750px;
+    justify-content: space-evenly;
+    width: 500px;
 }
 
 .nav-items a {
@@ -123,6 +123,23 @@ h3 {
     transform: scale(1.1);
     transition: transform .4s;
 }
+
+/* .dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    overflow: hidden;
+    position: absolute;
+    background-color: var(--gym-color);
+    max-width: px;
+    z-index: 1;
+    padding: 5px 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+} */
 
 /* Buttons de login e registro */
 

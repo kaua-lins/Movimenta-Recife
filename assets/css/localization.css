@@ -125,6 +125,10 @@ h3 {
     line-height: 3rem;
 }
 
+.visible {
+    display: none;
+}
+
 /* Cronograma de atividades do programa */
 
 .activities-title {
@@ -289,8 +293,35 @@ h3 {
     }
 
     .time-card {
-       padding: 50px 0px;
+       padding: 20px;
     }
+
+    .time-week {
+        padding: 0px;
+        line-height: 2rem;
+    }
+
+    .visible {
+        display: block;
+    }
+
+    .invisible {
+        display: none;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .timeline-box-one {
+        height: 700px;
+        margin: 20px;
+    }
+
+    .timeline-box-two {
+        display: none;
+    }
+    
 }
 
 @media (max-width: 400px) {
@@ -298,17 +329,21 @@ h3 {
         width: 400px;
     }
 
-    .time-card {
-        padding: 20px;
+    .time-title {
+        padding: 10px;
     }
 
-    .timeline-box-one,
-    .timeline-box-two {
+    .time-card {
+        width: 100%;
         padding: 10px;
-        margin: 20px;
     }
+
+/*     .timeline-box-one{
+        padding: 0;
+        margin: 0;
+    } */
 
     .footer-link {
-        width: 400px;
+        width: 300px;
     }
 }

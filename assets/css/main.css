@@ -81,12 +81,10 @@ h3 {
 
 .navegation-bar {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--white-color);
-    padding: 10px;
-    height: 120px;
-    width: 100%;
+    padding: 30px;
 }   
 
 /* Logo da barra de navegação */
@@ -94,6 +92,7 @@ h3 {
 .nav-logo {
     width: 60px;
     height: 60px;
+    margin-left: 40px;
 }
 
 .nav-logo img {
@@ -106,7 +105,7 @@ h3 {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    width: 500px;
+    width: 100%;
 }
 
 .nav-items a {
@@ -115,7 +114,7 @@ h3 {
     align-items: center;
     text-decoration: none;
     color: var(--gray-color);
-    gap: 7px;
+    padding: 25px;
 }
 
 .nav-items a:hover {
@@ -123,23 +122,6 @@ h3 {
     transform: scale(1.1);
     transition: transform .4s;
 }
-
-/* .dropdown {
-    position: relative;
-}
-
-.dropdown-content {
-    overflow: hidden;
-    position: absolute;
-    background-color: var(--gym-color);
-    max-width: px;
-    z-index: 1;
-    padding: 5px 10px;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-} */
 
 /* Buttons de login e registro */
 
@@ -176,10 +158,6 @@ h3 {
     color: var(--primary-color);
     margin-right: 25px;
     text-decoration: none;
-}
-
-.hamburguer {
-    display: none;
 }
 
 /* Seção principal */
@@ -591,19 +569,6 @@ h3 {
 }
 
 @media (max-width: 1024px) {
-    .navegation-bar {
-        justify-content: space-between;
-    }
-
-    .nav-logo {
-        margin-left: 30px;
-    }
-
-    .nav-items,
-    .nav-buttons {
-        display: none;
-    }
-
     .main-box {
         display: grid;
         grid-template-columns: 1fr;
@@ -621,12 +586,19 @@ h3 {
         width: 100%;
         margin: 6px auto;
     }
+}
 
-    .hamburguer {
-        width: 40px;
-        height: 30px;
-        margin-right: 30px;
-        display: inline-block;
+@media (max-width: 852px) {
+    .nav-logo {
+        margin-left: 0;
+    }
+
+    .navegation-bar {
+        justify-content: space-between;
+    }
+
+    .nav-items {
+        display: none;
     }
 }
 

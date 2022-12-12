@@ -250,7 +250,7 @@ h2 {
     }
 
     .register-box {
-        width: 400px;
+        width: 500px;
     }
 
     .register-title {
@@ -263,9 +263,13 @@ h2 {
     }
 }
 
+@media (max-width: 500px) {
+    .register-box {
+        width: 400px;
+    }
+}
+
  @media (max-width: 400px) {
-
-
     .register-box {
         width: 320px;
     }

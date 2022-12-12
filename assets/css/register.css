@@ -244,7 +244,29 @@ h2 {
         display: none;
     }
 
+    .register-boxes {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .register-box {
+        width: 400px;
+    }
+
+    .register-title {
+        text-align: center;
+        font-size: 3rem;
+    }
+
     .register-login {
         display: flex;
+    }
+}
+
+ @media (max-width: 400px) {
+
+
+    .register-box {
+        width: 320px;
     }
 }

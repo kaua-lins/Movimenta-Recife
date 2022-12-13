@@ -13,7 +13,7 @@ font-family: 'Roboto', sans-serif; */
     --gray-color: #b6c1c5;
     --healthy-color: rgb(2, 126, 2);
     --healthy-secundary-color: rgb(2, 105, 2);
-    --volleyball-color: rgb(2, 2, 175);
+    --sport-color: rgb(4, 4, 136);
     --gym-color: rgb(145, 15, 15)
 }
 
@@ -289,88 +289,144 @@ h3 {
     text-decoration: underline;
 }
 
-/* Seção de vôlei */
+/* Seção de esportes*/
 
-.volleyball-box {
-    border: 3px solid var(--volleyball-color);
+#sport {
+    border: 3px solid var(--sport-color);
 }
 
-.volleyball-title {
-    text-align: center;
-    color: var(--volleyball-color);
-    margin: 60px 0px;
-}
-
-.volleyball-subtitle {
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.volleyball-content {
+.sport-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     place-items: center;
 }
 
-/* Lista dos beneficios do vôlei a saúde */
-
-.volleyball-card {
-    color: var(--volleyball-color);
-    background-color: var(--white-color);
-    border: 3px solid var(--volleyball-color);
-    padding: 30px;
-    border-radius: 8px;
-    font-size: 1.8rem;
-    display: grid;
-    margin: 10px;
-}
-
-.volleyball-list-item {
-    border-bottom: 2px solid var(--volleyball-color);
-    margin-bottom: 40px;
-    list-style: none;
-    font-weight: 700;
-    display: block;
-}
-
-/* Video de regras básicas sobre o vôlei */
-
-.volleyball-video-title {
-    margin-bottom: 40px;
-    color: var(--volleyball-color);
+.sport-title,
+.sport-subtitle {
     text-align: center;
+    padding: 40px;
+    color: var(--sport-color);
 }
 
-.volleyball-video iframe {
-    border: 3px solid var(--volleyball-color);
+.sport-notice {
+    text-align: center;
+    line-height: 3rem;
+    font-size: 2rem;
+    padding: 30px;
+    border-radius: 5px;
+
+    max-width: 550px;
+    margin: 30px;
+
+    background-color: var(--sport-color);
+    color: #fff;
 }
 
-/* Saiba mais e botão de inicio */
+.sport-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
 
-.volleyball-others {
+.sport-volleyball-card,
+.sport-football-card,
+.sport-basket-card {
+    text-align: center;
+    padding: 40px;
+    margin: 10px;
+
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 40px;
-    margin-left: 10px;
+} 
+
+.volleyball-title,
+.football-title,
+.basket-title {
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 3.5rem;
 }
 
-.volleyball-more {
-    width: 50%;
+.volleyball-text,
+.football-text,
+.basket-text {
+    padding: 20px;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 500;
 }
 
-.volleyball-more a {
-    padding: 5px 10px;
-    background-color: var(--volleyball-color);
-    color: var(--white-color);
+.sport-volleyball-card {
+    border: 5px solid var(--sport-color);
+}
+
+.volleyball-title,
+.volleyball-text {
+    color: var(--sport-color);
+}
+
+.sport-football-card {
+    border: 5px solid #070707;
+}
+
+.sport-basket-card {
+    border: 5px solid #e7aa10;
+}
+
+.basket-title,
+.basket-text {
+    color: #e7aa10;
+}
+
+.volleyball-link-container,
+.football-link-container,
+.basket-link-container {
+    padding: 10px 5px;
+}
+
+.volleyball-link,
+.football-link,
+.basket-link {
     text-decoration: none;
-    border-radius: 4px;
     display: inline-block;
+
+    padding: 10px 8px;
+    border-radius: 5px;
 }
-.volleyball-more a:hover{
-    background-color: rgb(2, 2, 151);
-    text-decoration: underline;
+
+.volleyball-link {
+    background-color: var(--sport-color);
+    color: #fff;
+    border: none;
+}
+
+.volleyball-link:hover {
+    background-color: #fff;
+    color: var(--sport-color);
+    border: 2px solid var(--sport-color);
+}
+
+.football-link {
+    background-color: #070707;
+    color: #fff;
+    border: 2px solid #070707;
+}
+
+.football-link:hover {
+    background-color: #fff;
+    color: #070707;
+    border: 2px solid #070707;
+}
+
+.basket-link {
+    background-color: #e7aa10;
+    color: #fff;
+    border: 2px solid #e7aa10;
+}
+
+.basket-link:hover {
+    background-color: #fff;
+    color: #e7aa10;
+    border: 2px solid #e7aa10;
 }
 
 /* Seção de academia (gym) */
@@ -554,7 +610,7 @@ h3 {
         place-items: center;
     }
 
-     .main-content h1 {
+    .main-content h1 {
         font-size: 8rem;
     }
 
@@ -607,14 +663,16 @@ h3 {
     .main-content h1,
     .healthy-title,
     .volleyball-title,
-    .gym-title {
+    .gym-title,
+    .sport-title {
         font-size: 5rem;
     }
 
     .main-content h2,
     .healthy-subtitle,
     .volleyball-subtitle,
-    .gym-subtitle {
+    .gym-subtitle,
+    .sport-subtitle {
         font-size: 3rem;
     }
 
@@ -629,28 +687,68 @@ h3 {
 
 @media (max-width: 600px) {
 
+    body {
+        font-size: 1.2rem;
+    }
+
+    .sport-notice {
+        max-width: 400px;
+    }
+
+    .main-content h1 {
+        text-align: center;
+    }
+
     .main-content h1,
     .healthy-title,
     .volleyball-title,
-    .gym-title {
+    .gym-title,
+    .sport-title {
         font-size: 4.5rem;
     }
 
     .main-content h2,
     .healthy-subtitle,
     .volleyball-subtitle,
-    .gym-subtitle {
-        font-size: 3rem;
+    .gym-subtitle, 
+    .sport-subtitle {
+        font-size: 2.5rem;
     }
 
     .main-list-item {
         font-size: 1.8rem;
     }
+
+    .basket-text,
+    .football-text,
+    .volleyball-text {
+        font-size: 1.8rem;
+    }
 }
 
-@media (min-width: 599px) {
-    .main-content h1 {
-        text-align: center;
+@media (max-width: 500px) {
+    .sport-volleyball-card,
+    .sport-basket-card,
+    .sport-football-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 435px) {
+    .sport-notice {
+        font-size: 1.3rem;
+    }
+
+    .sport-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+}
+
+@media (max-width: 320px) {
+    .sport-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 }
 

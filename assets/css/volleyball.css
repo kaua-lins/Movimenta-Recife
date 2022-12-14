@@ -1,0 +1,179 @@
+/* Fontes utilizadas no site */
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Permanent Marker', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@400;700&family=Permanent+Marker&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #044389;
+}
+
+.main-title,
+.second-title {
+    font-size: 5rem;
+    padding: 60px;
+    text-align: center;
+    color: #FCF300;
+    font-family: 'Permanent Marker', sans-serif;
+}
+
+.main-container,
+.second-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.main-card,
+.second-card {
+    border: 2px solid #fff;
+    border-radius: 20px;
+
+    padding: 30px;
+    margin: 10px;
+
+    background-image: url("../images/wave-haikei.svg");
+    background-position: top 100px;
+}
+
+.number {
+    font-size: 6rem;
+    padding: 10px;
+    color: #FCF300;
+}
+
+.main-subtitle {
+    font-size: 2.5rem;
+    padding: 10px;
+    text-align: center;
+    color: #FCF300;
+}
+
+.main-text,
+.second-text {
+    padding: 10px;
+    line-height: 3rem;
+    color: #fff;
+}
+
+.second-text {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.come-back {
+    display: flex;
+    justify-content: center;
+}
+
+.to-main-screen {
+    padding: 30px;
+
+    display: inline-block;
+    color: #FCF300;
+
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.to-main-screen:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+/* Responsividade */
+
+@media (max-width: 680px) {
+    .second-text {
+        font-size: 2rem;
+        text-align: left;
+    }
+}
+
+@media (max-width: 750px) {
+    .main-title,
+    .second-title {
+        font-size: 4rem;
+    }
+
+    .second-text {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .main-title,
+    .second-title {
+        font-size: 3.5rem;
+    }
+
+    .second-text {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 500px) {
+    p {
+        font-size: 1.8rem;
+    }
+
+    .main-container,
+    .second-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .main-subtitle {
+        font-size: 2.2rem;
+    }
+
+    .second-text {
+        font-size: 1.5rem;
+    }
+
+    .number {
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 410px) {
+    .main-title,
+    .second-title {
+        font-size: 3rem;
+    }
+
+    .second-text {
+        font-size: 1.3rem;
+    }
+
+    .to-main-screen {
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+}

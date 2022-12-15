@@ -34,6 +34,10 @@ h3 {
     text-transform: uppercase;
 }
 
+ul {
+    list-style: none;
+}
+
 .logo {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -46,6 +50,11 @@ h3 {
     padding: 40px;
     font-size: 3.5rem;
     text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    padding: 20px;
 }
 
 /* Caixa das localizações */
@@ -153,7 +162,6 @@ h3 {
     padding: 30px;
     border-radius: 5px;
     margin: 40px;
-    height: 280px;
     display: grid;
     align-items: center;
 }
@@ -300,15 +308,7 @@ h3 {
         padding: 0px;
         line-height: 2rem;
     }
-
-    .visible {
-        display: block;
-    }
-
-    .invisible {
-        display: none;
-    }
-
+    
     ul {
         list-style: none;
     }
@@ -337,11 +337,6 @@ h3 {
         width: 100%;
         padding: 10px;
     }
-
-/*     .timeline-box-one{
-        padding: 0;
-        margin: 0;
-    } */
 
     .footer-link {
         width: 300px;

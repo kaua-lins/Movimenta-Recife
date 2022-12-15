@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
+    <script src="main.js"></script>
     <title>Movimenta Recife</title>
 </head>
 <body>
@@ -45,7 +46,7 @@
                     </li>
 
                     <li class="nav-items-icon">
-                        <a class="nav-items-link" href="#">
+                        <a class="nav-items-link" href="#imc">
                             <img src="https://cdn-icons-png.flaticon.com/128/1011/1011812.png" 
                             width="40px"
                             alt="">
@@ -124,10 +125,6 @@
                 </div>
 
                 <div class="healthy-others">
-                    <div class="healthy-more">
-                        <a href="#">LEIA MAIS</a>
-                    </div>
-
                     <div class="to-main-screen">
                         <div class="to-main-screen-button">
                             <a href="#nav">
@@ -190,7 +187,7 @@
                         </p>
 
                         <div class="basket-link-container">
-                            <a href="basket.html" 
+                            <a href="#" 
                             target="_blank"
                             class="basket-link">Leia mais</a>
                         </div>
@@ -238,7 +235,7 @@
 
             <div class="gym-others">
                 <div class="gym-more">
-                    <a href="localization.html" target="_blank">LOCALIZAÇÕES</a>
+                    <a href="localization.html" target="_blank">Localizações</a>
                 </div>
                 <div class="to-main-screen">
                     <div class="to-main-screen-button">
@@ -252,6 +249,25 @@
                 </div>
             </div>
         </section>
+
+        <section id="imc">
+            <div class="calculadora-container">
+                <div class="calculadora-imc">
+                    <h1 class="title-imc">Calculadora de IMC</h1>
+
+                    <div class="calcula-altura">
+                        Altura (M) <input type="number" id="altura">
+                    </div>
+                    <div class="calcula-peso">
+                        Peso (KG) <input type="number" id="peso">
+                    </div>
+                    <div class="calcula-button">
+                        <button id="button-imc" onclick="calculate()">Calcular</button>
+                    </div>
+                    <textarea name="" id="resultado" rows="1"></textarea>
+                </div>  
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -263,7 +279,6 @@
                     <li>Kauã Lins Finesso Seára 01518490</li>
                     <li>Ana Flávia Pedrosa 01519044</li>
                     <li>Ian Almeida de Carvalho 01467829</li>
-                    <li>Matheus Revoredo Lacet Camargo 01568108</li>
                 </ul>
             </div>
 

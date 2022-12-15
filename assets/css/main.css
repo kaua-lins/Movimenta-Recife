@@ -489,7 +489,7 @@ h3 {
 }
 
 .gym-more a {
-    padding: 5px 10px;
+    padding: 10px 5px;
     background-color: var(--gym-color);
     color: var(--white-color);
     text-decoration: none;
@@ -500,6 +500,67 @@ h3 {
 .gym-more a:hover{
     background-color: rgb(114, 1, 1);
     text-decoration: underline;
+}
+
+/* Calculo IMC */
+
+.calculadora-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-imc {
+    font-size: 3rem;
+    color: #9A031E;
+}
+
+#altura,
+#peso {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+#button-imc {
+    padding: 15px 10px;
+    width: 100%;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #9A031E;
+    color: #fff;
+    border: none;
+    font-size: 1.8rem;
+}
+
+.calculadora-imc {
+    padding: 30px;
+    background-color: #F2F4F3;
+    margin: 10px;
+    border-radius: 20px;
+    border: 2px solid #9A031E;
+    color: #fff;
+
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.calcula-altura,
+.calcula-peso {
+    padding: 20px;
+    color: #9A031E;
+}
+
+#resultado {
+    width: 100%;
+    margin: 10px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border: none;
+    background-color: #F2F4F3;
+    color: #9A031E;
+    text-align: center;
 }
 
 /* Footer */
@@ -728,6 +789,10 @@ h3 {
     .sport-football-card {
         padding: 20px;
     }
+
+    .title-imc {
+        font-size: 2.5rem;
+    }
 }
 
 @media (max-width: 435px) {
@@ -738,6 +803,12 @@ h3 {
     .sport-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+}
+
+@media (max-width: 400px) {
+    .title-imc {
+        font-size: 2rem;
     }
 }
 

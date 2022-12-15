@@ -1,0 +1,190 @@
+/* Fontes utilizadas no site */
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Permanent Marker', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@400;700&family=Permanent+Marker&family=Roboto&display=swap');
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-title,
+.second-title {
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+
+    padding: 30px;
+}
+
+.main-text,
+.second-text {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+
+    padding: 15px;
+}   
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.main-card,
+.second-card {
+    border: 2px solid #020402;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.main-card:nth-child(odd),
+.second-card:nth-child(2n) {
+    background-color: #020402;
+    color: #fff;
+}
+
+.main-image {
+    max-width: 50px;
+    max-height: 50px;
+    margin: 10px;
+}
+
+.main-icon-image {
+    max-width: 100%;
+}
+
+.main-subtitle,
+.second-subtitle {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 20px;
+}
+
+.main-text-card,
+.second-text-card {
+    padding: 20px;
+    line-height: 3rem;
+}
+
+.atention-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-text {
+    width: 700px;
+    font-size: 1.8rem;
+    text-align: left;
+}
+
+strong {
+    color: red;
+}
+
+.second-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.come-back {
+    display: flex;
+    justify-content: center;
+}
+
+.to-main-screen {
+    padding: 30px;
+
+    display: inline-block;
+    color: #020402;
+
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.to-main-screen:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+@media (max-width: 750px) {
+    .main-text {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+}
+
+@media (max-width: 630px) {
+    .main-title,
+    .second-title {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-text,
+    .second-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    .main-title,
+    .second-title {
+        font-size: 3rem;
+    }
+
+    .main-subtitle,
+    .second-subtitle {
+        font-size: 1.8rem;
+    }
+
+    .main-text-card,
+    .second-text-card,
+    .second-subtitle {
+        padding: 5px;
+        font-size: 1.7rem;
+    }
+
+    .to-main-screen {
+        padding: 20px;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-container,
+    .second-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
